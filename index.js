@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
     console.log("msg send to client");
 });
 
+app.get("/about", (req, res) => {
+    res.send("<h1> Welcome to the about page </h1>")
+});
+
 app.listen(3000, () => {
     console.log(`server is running on ${port}  `)
 });
